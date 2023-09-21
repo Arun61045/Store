@@ -46,7 +46,7 @@ services.Configure<ApiBehaviorOptions>(obtions=>
      {
         opt.AddPolicy("CorsPolicy",policy =>
         {
-            policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200");
+            policy.WithOrigins("https://localhost:4200").AllowAnyHeader().AllowAnyMethod();
         });
      });
 
